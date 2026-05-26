@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#000814" />
+  <title>Cyber Threat Globe – Deutsche Bank</title>
+  <script type="module" crossorigin src="./assets/index-CSYXs5ys.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-JmNyZ70h.css">
+</head>
+<body>
+  <div id="app">
+
+    <!-- Globe canvas container -->
+    <div id="globe-container"></div>
+
+    <!-- Top bar -->
+    <header id="top-bar">
+      <div id="logo-area">
+        <span class="db-mark">■</span>
+        <span class="db-label">Deutsche Bank</span>
+        <span class="divider">|</span>
+        <span class="page-title">Cyber Threat Globe</span>
+      </div>
+      <div id="live-badge">
+        <span class="pulse-dot"></span>
+        LIVE
+      </div>
+    </header>
+
+    <!-- Stats overlay -->
+    <div id="stats-overlay">
+      <div class="stat-block" id="stat-today">
+        <div class="stat-value" id="counter-today">0</div>
+        <div class="stat-label">Angriffe heute</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-block" id="stat-per-sec">
+        <div class="stat-value" id="counter-per-sec">0</div>
+        <div class="stat-label">pro Sekunde</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-block">
+        <div class="stat-value" id="counter-countries">0</div>
+        <div class="stat-label">Länder betroffen</div>
+      </div>
+    </div>
+
+    <!-- Attack type legend -->
+    <div id="legend">
+      <div class="legend-item">
+        <span class="legend-dot" style="background:#ff4d6d"></span>
+        <span>Ransomware</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-dot" style="background:#f77f00"></span>
+        <span>Phishing</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-dot" style="background:#06d6a0"></span>
+        <span>DDoS</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-dot" style="background:#4cc9f0"></span>
+        <span>Datenleck</span>
+      </div>
+    </div>
+
+    <!-- Latest attack ticker -->
+    <div id="ticker">
+      <div id="ticker-label">Letzter Angriff</div>
+      <div id="ticker-text">Initialisiere Feed…</div>
+    </div>
+
+    <!-- Touch hint (shown briefly) -->
+    <div id="touch-hint">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M9 11l3 3L22 4"/>
+        <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10"/>
+      </svg>
+      <span>Globus drehen</span>
+    </div>
+
+  </div>
+
+</body>
+</html>
